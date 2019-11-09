@@ -12,4 +12,4 @@ def addNum(nub,filepath):
     img.show()
 if __name__ == '__main__':
     filepath='D:\\360\\test.jpg'
-    addNum(1000000,filepath)
+    addNum(1,filepath)
