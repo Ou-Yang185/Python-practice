@@ -46,13 +46,14 @@ def clear_table():
     delete="delete from code"
     cur.execute(delete)
     print("delete successfully")
+    db.close()                  
 if __name__=="__main__":
     group=int(input("input number consist of each activate-code:"))    #例如：输入2 则为 "abucya-xsddaz",输入3 则为"dwedd-xscc-csddcd”
     number=int(input("input generate's number and insert into database directly:"))         #想要创建的激活码数目
     make_insert(group,number)
     select()                #查询整张表
     #clear_table()           #清空表
-    select()
+    #select()
 
 
 
